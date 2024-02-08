@@ -51,6 +51,12 @@ echo "Initializing Terraform with env0 backend and pushing state"
 terraform init
 terraform state push -ignore-remote-version -force tfc.tfstate
 
+echo "Pushed Terraform state to env0"
+
 # cleanup
 cd ..
 rm -rf "$ws_directory"
+
+echo "-------"
+echo "State migration for workspace: $WS_NAME COMPLETE!"
+echo "-------"
