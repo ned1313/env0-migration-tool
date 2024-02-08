@@ -1,5 +1,5 @@
 data "http" "projects" {
-  url             = "https://app.terraform.io/api/v2/organizations/${var.tfc_organization}/projects?page[size]=100"
+  url = "https://app.terraform.io/api/v2/organizations/${var.tfc_organization}/projects?page[size]=100"
   request_headers = {
     Authorization = "Bearer ${var.tfc_token}"
   }
