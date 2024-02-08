@@ -25,3 +25,9 @@ variable "tfc_token" {
   description = "TFC/TFE token"
   type        = string
 }
+
+variable "generate_env0_config" {
+  default     = true
+  description = "Whether to create the env0 configuration from the env0-resources-generator. Defaults to true."
+  type        = bool
+}
